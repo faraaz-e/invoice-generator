@@ -3,6 +3,7 @@
   "name": "invoice-generator",
   "version": "1.0.0",
   "description": "",
+  "private": "false",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
