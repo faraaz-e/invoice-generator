@@ -1,4 +1,17 @@
 # invoice-generator
-Invoice generating application | Tech : React Js
+---
+An Invoice generating application
 
-Application Development In-Progress...👨‍💻
+**Tech :** 
+1. Library : React Js
+2. CSS Framework : TailwindCSS
+
+### Installation
+---
+
+* Clone this repository
+* `npm install -D parcel`
+* `npm install react`
+* `npm install react-dom`
+* Install & setup Tailwindcss with parcel (as per docs)
+* Finally, Run `npm start`
