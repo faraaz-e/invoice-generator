@@ -1,9 +1,12 @@
 {
+  "homepage": "https://faraaz-e.github.io/invoice-generator", 
   "name": "invoice-generator",
   "version": "1.0.0",
   "description": "",
-  "main": "App.js",
+  "main": "src/App.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "parcel index.html",
     "build": "parcel build index.html",
     "test": "jest"
@@ -11,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "parcel": "^2.9.3",
     "postcss": "^8.4.27",
     "process": "^0.11.10",
