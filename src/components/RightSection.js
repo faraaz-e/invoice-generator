@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import currencyList from "./../utils/currencyList";
+import currencyList from "../utils/currencyList";
 
 const RightSection = (props) => {
   const [invoiceNo, setInvoiceNo] = useState(generateInvoiceNumber);
@@ -30,9 +30,8 @@ const RightSection = (props) => {
 
   return (
     <>
-      <div className="fixed top-3 right-32 print:hidden">
-        <div className="grid grid-rows-1">
-          <div className="py-2">
+      <div className="grid grid-cols-4 my-2 pb-1 print:hidden">
+          <div className="px-1">
             <select
               className="p-2 w-full rounded-lg border border-1 border-gray-700 text-xs focus:outline-0"
               value={currencyType}
@@ -45,7 +44,7 @@ const RightSection = (props) => {
               ))}
             </select>
           </div>
-          <div className="py-2">
+          <div className="px-1">
             <button
               className="p-2 w-full bg-teal-600 text-white text-xs rounded-lg"
               onClick={() => setInvoiceNo(generateInvoiceNumber)}
@@ -53,7 +52,7 @@ const RightSection = (props) => {
               Generate Invoice number
             </button>
           </div>
-          <div className="py-2 justify-center">
+          <div className="px-1 justify-center">
             <button
               className="p-2 w-full bg-red-500 text-white text-xs rounded-lg"
               onClick={() => window.location.reload()}
@@ -61,7 +60,7 @@ const RightSection = (props) => {
               Reset Invoice
             </button>
           </div>
-          <div className="py-2 flex justify-center">
+          <div className="px-1 flex justify-center">
             <button
               className="p-2 w-full bg-blue-600 text-white text-xs rounded-lg"
               onClick={window.print}
@@ -69,7 +68,6 @@ const RightSection = (props) => {
               Review / Print Invoice
             </button>
           </div>
-        </div>
       </div>
     </>
   );
