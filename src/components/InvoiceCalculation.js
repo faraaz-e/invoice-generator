@@ -100,12 +100,15 @@ const InvoiceCalculation = ({ subtotalAmt, currencyData }) => {
             <div className="text-right font-light">
               <input
                 type="number"
-                className="focus:outline-0 focus:bg-blue-100 text-right w-2/5"
+                className="focus:outline-0 focus:bg-blue-100 text-right w-2/5 print:hidden"
                 step="0.01"
                 min="0"
                 value={shippingCost}
                 onChange={(e) => setShippingCost(e.target.value)}
               />
+              <p className="text-right font-light hidden print:block">
+                {shippingCost}
+              </p>
             </div>
           </div>
           {/** fifth row */}
