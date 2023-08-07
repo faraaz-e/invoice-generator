@@ -2,6 +2,8 @@
 ---
 An Invoice generating application
 
+Live demo : https://faraaz-e.github.io/invoice.generator
+
 **Tech :** 
 1. Library : React Js
 2. CSS Framework : TailwindCSS
