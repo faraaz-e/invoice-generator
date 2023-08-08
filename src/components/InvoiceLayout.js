@@ -27,7 +27,7 @@ const InvoiceLayout = () => {
         />
       </div>
       <div className="flex justify-center bg-gray-200 h-full print:bg-white">
-        <div className="container bg-white w-full lg:w-1/2 py-10 m-4 h-full px-10 print:w-full print:px-0 print:py-3">
+        <div className="container bg-white w-full lg:w-1/2 py-10 m-3 h-full px-10 print:w-full print:px-0 print:py-3">
           {/** First row */}
           <div className="grid grid-cols-3 my-2 pb-4">
             <ConsignerDetail />
