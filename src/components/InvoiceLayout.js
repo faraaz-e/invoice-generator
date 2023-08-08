@@ -4,7 +4,7 @@ import ConsignerDetail from "./ConsignerDetail";
 import InvoiceIdentification from "./InvoiceIdentification";
 import InvoiceTable from "./InvoiceTable";
 import RemarkSection from "./RemarkSection";
-import RightSection from "./RightSection";
+import UpperSection from "./UpperSection";
 
 const InvoiceLayout = () => {
   const [currencyData, setCurrencyData] = useState("");
@@ -21,7 +21,7 @@ const InvoiceLayout = () => {
   return (
     <>
       <div className="flex justify-center bg-gray-200 h-full print:bg-white">
-        <RightSection
+        <UpperSection
           sendCurrencyData={sendCurrencyData}
           sendInvoiceNumber={sendInvoiceNumber}
         />

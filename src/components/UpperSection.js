@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import currencyList from "../utils/currencyList";
 
-const RightSection = (props) => {
+const UpperSection = (props) => {
   const [invoiceNo, setInvoiceNo] = useState(generateInvoiceNumber);
   const [currencyType, setCurrencyType] = useState(currencyList[0].value);
 
@@ -30,7 +30,7 @@ const RightSection = (props) => {
 
   return (
     <>
-      <div className="grid grid-cols-4 my-2 pb-1 print:hidden">
+      <div className="grid grid-cols-4 my-2 pb-1 items-center print:hidden">
           <div className="px-1">
             <select
               className="p-2 w-full rounded-lg border border-1 border-gray-700 text-xs focus:outline-0"
@@ -52,7 +52,7 @@ const RightSection = (props) => {
               Generate Invoice number
             </button>
           </div>
-          <div className="px-1 justify-center">
+          <div className="px-1">
             <button
               className="p-2 w-full bg-red-500 text-white text-xs rounded-lg"
               onClick={() => window.location.reload()}
@@ -60,7 +60,7 @@ const RightSection = (props) => {
               Reset Invoice
             </button>
           </div>
-          <div className="px-1 flex justify-center">
+          <div className="px-1">
             <button
               className="p-2 w-full bg-blue-600 text-white text-xs rounded-lg"
               onClick={window.print}
@@ -73,4 +73,4 @@ const RightSection = (props) => {
   );
 };
 
-export default RightSection;
+export default UpperSection;
