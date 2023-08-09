@@ -30,7 +30,7 @@ const UpperSection = (props) => {
 
   return (
     <>
-      <div className="grid grid-cols-4 my-2 pb-1 items-center print:hidden">
+      <div className="grid grid-cols-4 my-2 items-center print:hidden">
           <div className="px-1">
             <select
               className="p-2 w-full rounded-lg border border-1 border-gray-700 text-xs focus:outline-0"

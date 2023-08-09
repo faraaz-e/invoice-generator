@@ -50,8 +50,8 @@ const InvoiceTable = ({ currencyData }) => {
 
   return (
     <>
-    <div className="mt-8">
-      <span className="p-3 flex justify-end">
+    <div className="mt-5">
+      <span className="p-2 flex justify-end">
         <img
           src={resetIcon}
           alt="Reset icon"
