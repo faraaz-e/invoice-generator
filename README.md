@@ -12,8 +12,6 @@ Live demo : https://faraaz-e.github.io/invoice-generator
 ---
 
 * Clone this repository
-* `npm install -D parcel`
-* `npm install react`
-* `npm install react-dom`
+* `npm install`
 * Install & setup Tailwindcss with parcel (as per docs)
 * Finally, Run `npm start`
